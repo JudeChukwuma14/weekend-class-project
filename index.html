@@ -9,11 +9,147 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Weekend project</title>
   </head>
   <body>
     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class=" bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="text-dark">Goodbye To the End Of Our Class</h1>
+            <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, omnis.
+                Omnis, aperiam quidem.</p>
+            <a href="#service" class="btn btn-primary btn-lg">Explore</a>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <h1 class=" text-center">OUR SERVICES</h1>
+            <p class="text-center text-muted">We Offer...</p>
 
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./image/NIKE+P-6000.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/image/NIKE+SHOX+R4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/image/NIKE+SHOX+TL.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">
+                About Us
+            </h1>
+            <p class=" text-center text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                esse.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://img.freepik.com/free-photo/pair-trainers_144627-3800.jpg?t=st=1734100320~exp=1734103920~hmac=1646e200835205e18486f191a421a47e1256793973b4c48404ab17b7a99aeee9&w=740"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus accusantium vitae
+                        autem quis hic architecto. Laboriosam veritatis ullam quisquam maxime deserunt voluptatum, sint
+                        accusantium recusandae eveniet deleniti nulla nobis!</p>
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus accusantium vitae
+                        autem quis hic architecto. Laboriosam veritatis ullam quisquam maxime deserunt voluptatum, sint
+                        accusantium recusandae eveniet deleniti nulla nobis!</p>
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus accusantium vitae
+                        autem quis hic architecto. Laboriosam veritatis ullam quisquam maxime deserunt voluptatum, sint
+                        accusantium recusandae eveniet deleniti nulla nobis!</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container"></div>
+            <h1 class=" text-center">Contact Us</h1>
+            <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolor!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="process-contact-form.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control"
+                                placeholder="Subject of Your Message" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" bg-dark text-white text-center py-3">
+        <p>&copy; 2024 FC WEB, All Right Reserved </p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
